@@ -1,0 +1,248 @@
+$mainColor: #17517F;
+$secondColor: #FF9329;
+*{
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box ;
+  
+}
+body {
+    overflow-x: hidden;
+}
+
+.login-container {
+    margin-bottom:50px;
+    .container-card {
+    background: #fff;
+    padding: 0px;
+    border-radius: 15px;
+    overflow:hidden;
+    border: 1px solid #707070;
+    box-shadow: 3px 5px 16.2px 1.8px #00000029;
+    .box-login-image {
+        padding:0;
+        height:100%;
+        img {
+            width:100%; height: 100%;
+            object-fit: cover;object-position: center;
+        }
+    }
+    form {
+        margin: 200px auto;
+        padding: 0px 25px;
+        .alert-danger {
+            color: #ea0c21;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            font-size: 12px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            background:none;
+            border:none;
+        }
+        .form-group {
+            border:1px solid #00000029;
+            border-radius: 15px;
+            position:relative;
+            margin-bottom:5px;
+        input {
+            border: none;
+            outline: none;
+            background: transparent;
+            padding-left: 50px;
+            &:focus {
+                border-color:none;
+                box-shadow:none;
+              }
+
+        }   
+        label {color:$mainColor;  margin-bottom:0px; padding-left: 50px; text-align:left;}
+        }
+        .fa-eye {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            opacity: 50%;
+            font-size: 15px;}
+            .fa-eye-slash{    position: absolute;
+                right: 12px;
+                top: 12px;
+                opacity: 50%;
+                font-size: 15px;}
+        .info-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            h6 {
+                padding: 15px;
+                letter-spacing: 1px;
+                font-size: 12px;
+                cursor:pointer;
+                color: $mainColor;
+                span {color: #707070;}
+            }
+            .login-button{
+                border-radius: 25px;
+                padding: 10px 50px;
+                background-color: $mainColor;
+                color:white;
+                margin: 10px 0 10px 0px;
+                border:none;
+                font-size: 14px;
+            }
+        }
+
+    }
+    }
+    &:before {
+        content: "";
+        background: linear-gradient(90deg, #17517f 0%, #579ad0 47%, #8dc0e8 100%);
+        width: 100%;
+        height: 30px;
+        display: block;
+        margin-bottom: 50px;
+        opacity: 60%;
+    }
+}
+
+/**/
+@media only screen and (max-width: 320px) { 
+    .navbar-light .navbar-brand img {
+        max-width: 100%;
+    }
+    .navbar-light .navbar-toggler {
+        width:100%;
+        margin:10px auto;
+    }
+
+.login-container {
+    &:before {
+        margin-bottom: 10px;
+    }
+    .container-card {
+    .box-login-image {
+        img {
+            display:none;
+        }
+    }
+
+    }
+    form {
+        margin: 200px auto;
+        padding: 0px 10px !important;
+        .alert-danger {
+            color: #ea0c21;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            font-size: 12px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            background:none;
+            border:none;
+        }
+        .form-group {
+            position:relative;
+            margin-bottom:5px;
+            display:block;
+            margin: auto;
+        input {
+
+            padding-left: 50px !important;
+            width:70%;
+            font-size: 12px;
+        }   
+        label {padding-left: 0px; width:30%; float:left; font-size: 12px;}
+        }
+        .fa-eye {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            opacity: 50%;
+            font-size: 15px;}
+            .fa-eye-slash{    position: absolute;
+                right: 12px;
+                top: 12px;
+                opacity: 50%;
+                font-size: 15px;}
+        .info-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            h6 {
+                padding: 15px;
+                letter-spacing: 1px;
+                font-size: 12px;
+                cursor:pointer;
+                color: $mainColor;
+                span {color: #707070;}
+            }
+            .login-button{
+                border-radius: 25px;
+                padding: 10px 50px;
+                background-color: $mainColor;
+                color:white;
+                margin: 10px 0 10px 0px;
+                border:none;
+                font-size: 14px;
+            }
+        }
+
+    }
+}
+
+}
+    @media only screen and (max-width: 768px) { 
+    .login-container {
+        &:before {
+            margin-bottom: 25px;
+        }
+        .container-card {
+        .box-login-image {
+            img {
+                display:none;
+            }
+        }
+        form {
+            padding: 0px 100px;
+            .username {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                margin: auto;
+                margin-bottom: 25px;
+                input {
+                    margin-left: 75px;
+                    width: 100%;
+                }
+            }
+            .info-login {
+                margin-left: 15px;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                padding-top: 25px;
+                h6 {
+                    padding:0px;
+                    font-size: 9px;
+                }
+                .login-button{
+                    padding: 5px 35px;
+                }
+            }
+    
+        }
+        }
+    }
+    }
+/**/
+
+/*End News*/
+

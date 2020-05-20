@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learining</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+
+
+</head>
+<body>
+    <!--Start Navbar-->
+    <app-navbar></app-navbar>
+    <!--End Navbar-->
+    <div class="signup-container">
+        <div class="container text-center container-card">
+            <div class="row">
+                    <div class=" col-md-12 col-lg-6">
+                        <h1 class="signup-heading">Create New Account</h1>
+                        <form [formGroup]="registrationForm" (ngSubmit)="register()" novalidate>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <input type="text" formControlName="name" name="name" class="form-control" id="name" placeholder="name">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <input type="password" formControlName="password" name="password"  class="form-control" id="password" placeholder="Password">
+                              </div>
+                              <div class="form-group col-md-12">
+                                <input type="email" formControlName="email" name="email"  class="form-control" id="email" placeholder="Email">
+                            </div>
+                            </div>
+                            <div class="form-row footer-btn">
+                                <div class="form-group col-md-6">
+                                    <button  class="btn btn-primary">Back</button>
+                                  </div>
+                              <div class="form-group col-md-6">
+                                <button type="submit" [disabled]="!registrationForm.valid" class="btn btn-primary">Next</button>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <p class="signup-clicking">By clicking the 'Sign Up' button, you confirm that you accept our and .</p>
+                                    <p class="terms-of-use">Terms of Use <span> and </span> Privacy Policy</p>
+                                </div>
+                              <div class="form-group col-md-12">
+                                <p class="have-account">Have an account? <span>Log In</span></p>
+                              </div>
+                            </div>                              
+                          </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="box-login-image">
+                            <img src="../../../assets/img/backgroundpeople.png" alt="background-login">
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+    <!--End News Letters-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+    </script>
+</body>
+</html>

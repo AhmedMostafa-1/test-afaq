@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+.owl-nav {
+    position: absolute;
+    right: 0;
+    bottom: 345px;
+    .owl-prev,.owl-next {
+        .am-next, .am-prev {
+            color: #ff8100;
+            font-size:24px;
+        }
+        
+    }
+}
+.owl-theme {
+    .owl-nav [class*=owl-] {
+        background:none;
+        &:before {
+            background:none;
+        }
+        &:hover {
+            background:none;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .owl-nav {
+        position: absolute;
+        right: 0;
+        bottom: 345px;
+        .owl-prev,.owl-next {
+            .am-next, .am-prev {
+                color: #ff8100;
+                font-size:24px;
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    .owl-nav {
+        position: absolute;
+        right: 0;
+        bottom: 345px;
+        .owl-prev,.owl-next {
+            .am-next, .am-prev {
+                color: #ff8100;
+                font-size:24px;
+            }
+            
+        }
+    }
+}
+
